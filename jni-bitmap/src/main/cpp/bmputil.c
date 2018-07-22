@@ -99,19 +99,3 @@ void JNICALL Java_com_example_jni_bitmap_Bmp_huidu(JNIEnv *env, jclass clazz, jo
 
     AndroidBitmap_unlockPixels(env, zBitmap);
 }
-
-// https://blog.csdn.net/chzphoenix/article/details/42171653
-/**
-	Bitmap.Config的四种枚举类型。(ARGB分别是alpha透明度和red、green、blue三色)
-	ARGB_8888：分别用8位来记录4个值，所以每个像素会占用32位。
-	ARGB_4444：分别用4位来记录4个值，所以每个像素会占用16位。
-	RGB_565：分别用5位、6位和5位来记录RGB三色值，所以每个像素会占用16位。
-	ALPHA_8：根据注释应该是不保存颜色值，只保存透明度（8位），每个像素会占用8位。
-*/
-
-/**
-	a) 用 AndroidBitmap_getInfo() 函数从位图句柄（从JNI得到）获得信息（宽度、高度、像素格式）
-	b) 用 AndroidBitmap_lockPixels() 对像素缓存上锁，即获得该缓存的指针。
-	c) 用C/C++ 对这个缓冲区进行读写
-	d) 用 AndroidBitmap_unlockPixels() 解锁
- */
