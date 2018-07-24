@@ -1,4 +1,4 @@
-package com.example.jni_bitmap;
+package com.ccflying.jnibitmap;
 
 import android.graphics.Bitmap;
 

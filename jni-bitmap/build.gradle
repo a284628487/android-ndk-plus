@@ -3,10 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
 
-
-
     defaultConfig {
-        applicationId "com.example.jni_bitmap"
+        applicationId "com.ccflying.jnibitmap"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1

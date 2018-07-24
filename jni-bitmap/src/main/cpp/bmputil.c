@@ -22,7 +22,7 @@
 #define RGBA_B(p)  ((p) & 0x000000FF)
 #define MAKE_RGBA(r,g,b,a) (((a) << 24) | ((r) << 16) | ((g) << 8) | (b))
 
-void JNICALL Java_com_example_jni_bitmap_Bmp_huidu(JNIEnv *env, jclass clazz, jobject zBitmap) {
+void JNICALL Java_com_ccflying_jnibitmap_Bmp_huidu(JNIEnv *env, jclass clazz, jobject zBitmap) {
     JNIEnv J = *env;
 
     if (zBitmap == NULL) {

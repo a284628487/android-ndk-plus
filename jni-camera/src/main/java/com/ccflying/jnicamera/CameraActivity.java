@@ -1,4 +1,4 @@
-package com.example.jni_camera;
+package com.ccflying.jnicamera;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
