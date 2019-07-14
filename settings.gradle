@@ -1,1 +1,1 @@
-include ':app', ':jni-camera', ':jni-bitmap'
+include ':jni-secure', ':jni-camera', ':jni-bitmap'
